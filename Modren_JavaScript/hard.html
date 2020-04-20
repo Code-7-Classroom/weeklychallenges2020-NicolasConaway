@@ -37,9 +37,9 @@
 
    <script>
     // Do Stuff Here
-    const bodyTag = document.querySelector(".container");
+    /* const bodyTag = document.querySelector(".container");
     const redButton = document.querySelector(".button--red");
-    const whiteButton = document.querySelector(".button--white");
+    const whiteButton = document.querySelector(".button--white")
 
     redButton.addEventListener('click', () => {
         bodyTag.classList.add("bg-red")
@@ -49,9 +49,20 @@
     whiteButton.addEventListener('click', () => {
         bodyTag.classList.add("bg-white")
         bodyTag.classList.remove("bg-red")
+    }) */
+    const redButton = document.querySelector('.button--red');
+    const whiteButton = document.querySelector('.button--white');
+
+    redButton.addEventListener('click', () => {
+      updateTheBackground('bg-red');
+    })
+
+    whiteButton.addEventListener('click', () => {
+      updateTheBackground('bg-white');
     })
     
     window.updateTheBackground = function(className) {
+      document.body.classList = className;
     }
    </script>
 </body>
