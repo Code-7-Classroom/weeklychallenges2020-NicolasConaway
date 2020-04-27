@@ -2,20 +2,20 @@ let express = require('express');
 
 let app = express();
 
-let data = require('./public/students.json')
+let data = require('./public/employees.json')
 
 
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
 
-    res.send("hello world")
+    res.send("This is the home page!")
 
 }) 
 
 
-app.get('/students', (req, res) => {
+app.get('/employees', (req, res) => {
 
     if(!data) {
-        res.status(404).send(`Couldn't find the students`)
+        res.status(404).send(`Couldn't find the employees`)
     }
 
     res.send(data)
@@ -23,16 +23,16 @@ app.get('/students', (req, res) => {
 })
 
 
-app.get('/students/:id', (req, res) => {
+app.get('/employees/:id', (req, res) => {
 
-    const sData = data.students.find((student) => {
-        console.log(student.id)
+    const sData = data.employees.find((employee) => {
+        console.log(employee.id)
 
-        return parseInt(req.params.id) === student.id
+        return parseInt(req.params.id) === employee.id
     })
 
     if(!sData) {
-        res.status(404).send(`Couldn't find the student id`)
+        res.status(404).send(`Couldn't find the employee id`)
     }
 
     res.send(sData)
