@@ -1,0 +1,64 @@
+{
+    "employees":[
+        {
+            "name":"Austin",
+            "id":1,
+            "salary":10000000,
+            "job":"Back End Developer"
+        },
+        {
+            "name":"Cody",
+            "id":2,
+            "salary":15000000,
+            "job":"CEO"
+        },
+        {
+            "name":"Wilson",
+            "id":3,
+            "salary":200000000,
+            "job":"front end"
+        },
+        {
+            "name":"Bill",
+            "id":4,
+            "salary":54531,
+            "job":"front end"
+        },
+        {
+            "name":"May",
+            "id":5,
+            "salary":75327,
+            "job":"back end"
+        },
+        {
+            "name":"Jupiter",
+            "id":6,
+            "salary":7777777,
+            "job":"full stack"
+        },
+        {
+            "name":"John",
+            "id":7,
+            "salary":8888888,
+            "job":"front end"
+        },
+        {
+            "name":"Nic",
+            "id":8,
+            "salary":2222222,
+            "job":"full stack"
+        },
+        {
+            "name":"Alex",
+            "id":9,
+            "salary":852741,
+            "job":"back end"
+        },
+        {
+            "name":"April",
+            "id":10,
+            "salary":123456,
+            "job":"back end"
+        }
+    ]
+}
