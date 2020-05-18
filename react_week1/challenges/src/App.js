@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Medium from './moreChallenges/Medium'
+import Hard from './Hard'
 
 class App extends React.Component {
 
@@ -15,12 +16,23 @@ class App extends React.Component {
   // Very Easy Challenge V
   render(){
     return(
-      <div className="veryEasy">
-        <h1 className="name">Nicolas Conaway</h1>
-        <p className="number">704-604-3099</p>
-        <p className="dateOfBirth">09/07/2000</p>
+      <div>
+        <div className="veryEasy">
+          <h1>Nicolas Conaway (veryEasy)</h1>
+          <p>Number: 704-604-3099</p>
+          <p>Date of Birth:09/07/2000</p>
+        </div>
+        
+      <div>
         {/* Medium Challenge V */}
-        <Medium /> 
+        <Medium />
+      </div>
+         
+      <div>
+        {/* Hard Challenges V */}
+        <Hard />
+      </div>
+        
       </div>
     )
   }

@@ -6,7 +6,7 @@ class Medium extends React.Component {
     super(props);
     this.state = {
       person: {
-          name: 'Nicolas Conaway',
+          name: 'Nicolas Conaway (medium)',
           number: '704-604-3099',
           dateOfBirth: '09/07/2000'
       }
@@ -26,8 +26,8 @@ class MediumChild extends React.Component {
         return(
             <div className="veryEasy">
                 <h1 className="name">{this.props.BasicInfo.name}</h1>
-                <p className="number">{this.props.BasicInfo.number}</p>
-                <p className="dateOfBirth">{this.props.BasicInfo.dateOfBirth}</p>
+                <p className="number">Number: {this.props.BasicInfo.number}</p>
+                <p className="dateOfBirth">Date of Birth: {this.props.BasicInfo.dateOfBirth}</p>
             </div> 
         )
     }
