@@ -1,5 +1,5 @@
 import React from 'react';
-import HardList from './moreChallenges/HardList'
+import HardList from './moreChallenges/HardTemplate'
 
 class Hard extends React.Component {
 
