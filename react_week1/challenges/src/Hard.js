@@ -16,8 +16,16 @@ class Hard extends React.Component {
 
     render(){
         return(
+            <Cards BasicInfo={this.state.person} />
+        )
+    }
+}
+
+class Cards extends React.Component {
+    render() {
+        return(
             <div>
-                {this.state.person.map(peeps => {
+                {this.props.BasicInfo.map(peeps => {
                     return <HardList 
                     name={peeps.name}
                     number={peeps.number}

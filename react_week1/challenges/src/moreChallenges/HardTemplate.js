@@ -1,6 +1,6 @@
 import React from 'react';
 
-const hardList = (props) => {
+const HardList = (props) => {
 
     return(
         <div className="veryEasy">
@@ -10,4 +10,4 @@ const hardList = (props) => {
         </div>)
 }
 
-export default hardList
+export default HardList
