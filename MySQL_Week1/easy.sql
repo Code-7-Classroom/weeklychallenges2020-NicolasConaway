@@ -21,7 +21,7 @@ VALUES
 
 DELETE FROM Books 
 WHERE book_publishDate 
-IS NOT NULL order by book_publishDate asc LIMIT 1;
+ORDER BY book_publishDate asc LIMIT 1;
 
 INSERT INTO Books(book_title, book_publishDate, author_firstName, aurthor_lastName)
 VALUES
